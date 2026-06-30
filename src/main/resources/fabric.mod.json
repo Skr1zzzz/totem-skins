@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "totem-skins",
+  "version": "${version}",
+  "name": "Totem Skins",
+  "description": "Rename a Totem of Undying to a player's name and it renders as a mini figurine with that player's skin.",
+  "authors": ["skrizzz_"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.totemskins.TotemSkinsClient"]
+  },
+  "mixins": [
+    {
+      "config": "totem-skins.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "minecraft": "~1.21.11",
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "java": ">=21"
+  }
+}
